@@ -252,6 +252,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--secondary-bg-color);
+    border-radius: 4px;
 }
 
 .antena-icon::before {
@@ -420,7 +421,7 @@ body {
     justify-content: center;
     gap: 24px;
     margin-top: 8px;
-    margin-bottom: 32px;
+
 }
 
 .social-item {
@@ -449,19 +450,21 @@ body {
 }
 
 .customers-section {
-    padding: 130px 156px 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .customers-subject {
-    font-style: normal;
+
+    color: var(--primery-text-color);
+    margin-top: 0;
+    margin-bottom: 72px;
+
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
+    line-height: 40px;
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 72px;
-    color: var(--primery-text-color);
 }
 
 .customers-list {
@@ -469,7 +472,7 @@ body {
     align-items: center;
     padding-left: 0;
     gap: 24px;
-    margin-bottom: 120px;
+
 }
 
 .customers-link {
@@ -480,16 +483,10 @@ body {
     justify-content: center;
     color: var(--customers-color);
     border: 1px solid var(--customers-color);
+    border-radius: 4px;
 }
 
 .customers-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--customers-color);
-    border: 1px solid var(--customers-color);
-
-    border-radius: 4px;
     width: 168px;
     height: 88px;
 }
@@ -508,11 +505,7 @@ body {
 }
 
 
-.customers-item:hover,
-.customers-item:focus {
 
-    border: 1px solid var(--hov-foc-color);
-}
 
 
 
@@ -532,7 +525,7 @@ body {
 }
 
 .logo-text {
-    width: 300px;
+    width: 264px;
     color: var(--secondary-color);
 
     margin-top: 16px;
@@ -565,18 +558,17 @@ body {
     margin-bottom: 0;
 }
 
-
-
 .footer-social-list {
     display: flex;
-    gap: 24px;
-    margin-top: 8px;
-    margin-bottom: 32px;
+
+    margin-top: 16px;
+    margin-bottom: 0;
 }
 
 .footer-social-item {
     width: 40px;
     height: 40px;
+    margin-right: 16px;
 }
 
 .footer-social-link {
@@ -587,8 +579,6 @@ body {
     height: 40px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-
-
 }
 
 .footer-social-link:hover,
@@ -600,19 +590,6 @@ body {
     width: 16px;
     height: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* СТИЛИ Portfolio portfolio.html */
@@ -702,7 +679,12 @@ body {
 
 }
 
-.advantages-item-portfolio:hover {
+.advantages-link-portfolio {
+    display: block;
+}
+
+.advantages-link-portfolio:hover,
+.advantages-link-portfolio:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
